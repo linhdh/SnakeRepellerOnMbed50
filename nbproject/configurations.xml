@@ -1,0 +1,2364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="mbed-os">
+        <df name="drivers">
+          <in>AnalogIn.cpp</in>
+          <in>BusIn.cpp</in>
+          <in>BusInOut.cpp</in>
+          <in>BusOut.cpp</in>
+          <in>CAN.cpp</in>
+          <in>Ethernet.cpp</in>
+          <in>FlashIAP.cpp</in>
+          <in>I2C.cpp</in>
+          <in>I2CSlave.cpp</in>
+          <in>InterruptIn.cpp</in>
+          <in>InterruptManager.cpp</in>
+          <in>RawSerial.cpp</in>
+          <in>SPI.cpp</in>
+          <in>SPISlave.cpp</in>
+          <in>Serial.cpp</in>
+          <in>SerialBase.cpp</in>
+          <in>Ticker.cpp</in>
+          <in>Timeout.cpp</in>
+          <in>Timer.cpp</in>
+          <in>TimerEvent.cpp</in>
+          <in>UARTSerial.cpp</in>
+        </df>
+        <df name="events">
+          <df name="equeue">
+            <in>equeue.c</in>
+            <in>equeue_mbed.cpp</in>
+            <in>equeue_posix.c</in>
+          </df>
+          <in>EventQueue.cpp</in>
+        </df>
+        <df name="features">
+          <df name="FEATURE_BLE">
+            <df name="source">
+              <df name="services">
+                <in>DFUService.cpp</in>
+                <in>UARTService.cpp</in>
+                <in>URIBeaconConfigService.cpp</in>
+              </df>
+              <in>BLE.cpp</in>
+              <in>BLEInstanceBase.cpp</in>
+              <in>DiscoveredCharacteristic.cpp</in>
+              <in>GapScanningParams.cpp</in>
+            </df>
+            <df name="targets">
+              <df name="TARGET_NORDIC">
+                <df name="TARGET_MCU_NRF51822">
+                  <df name="hal_patch">
+                    <in>nordic_critical.c</in>
+                    <in>sleep.c</in>
+                  </df>
+                  <df name="sdk">
+                    <df name="source">
+                      <df name="ble">
+                        <df name="ble_radio_notification">
+                          <in>ble_radio_notification.c</in>
+                        </df>
+                        <df name="ble_services">
+                          <df name="ble_dfu">
+                            <in>ble_dfu.c</in>
+                          </df>
+                        </df>
+                        <df name="common">
+                          <in>ble_advdata.c</in>
+                          <in>ble_conn_params.cpp</in>
+                          <in>ble_conn_state.c</in>
+                          <in>ble_srv_common.c</in>
+                        </df>
+                        <df name="device_manager">
+                          <in>device_manager_peripheral.c</in>
+                        </df>
+                        <df name="peer_manager">
+                          <in>id_manager.c</in>
+                          <in>peer_data.c</in>
+                          <in>peer_data_storage.c</in>
+                          <in>peer_database.c</in>
+                          <in>peer_id.c</in>
+                          <in>pm_buffer.c</in>
+                          <in>pm_mutex.c</in>
+                        </df>
+                      </df>
+                      <df name="drivers_nrf">
+                        <df name="ble_flash">
+                          <in>ble_flash.c</in>
+                        </df>
+                        <df name="delay">
+                          <in>nrf_delay.c</in>
+                        </df>
+                        <df name="hal">
+                          <in>nrf_ecb.c</in>
+                          <in>nrf_nvmc.c</in>
+                        </df>
+                        <df name="pstorage">
+                          <in>pstorage.c</in>
+                        </df>
+                      </df>
+                      <df name="libraries">
+                        <df name="bootloader_dfu">
+                          <in>bootloader_util.c</in>
+                          <in>dfu_app_handler.c</in>
+                          <in>dfu_init_template.c</in>
+                        </df>
+                        <df name="crc16">
+                          <in>crc16.c</in>
+                        </df>
+                        <df name="fds">
+                          <in>fds.c</in>
+                        </df>
+                        <df name="fstorage">
+                          <in>fstorage.c</in>
+                          <in>fstorage_nosd.c</in>
+                        </df>
+                        <df name="hci">
+                          <in>hci_mem_pool.c</in>
+                        </df>
+                        <df name="scheduler">
+                          <in>app_scheduler.c</in>
+                        </df>
+                        <df name="util">
+                          <in>app_error.c</in>
+                          <in>app_util_platform.c</in>
+                          <in>nrf_assert.c</in>
+                          <in>sdk_mapped_flags.c</in>
+                        </df>
+                      </df>
+                      <df name="softdevice">
+                        <df name="common">
+                          <df name="softdevice_handler">
+                            <in>softdevice_handler.c</in>
+                            <in>softdevice_handler_appsh.c</in>
+                          </df>
+                        </df>
+                      </df>
+                    </df>
+                  </df>
+                  <df name="source">
+                    <df name="btle">
+                      <df name="custom">
+                        <in>custom_helper.cpp</in>
+                      </df>
+                      <in>btle.cpp</in>
+                      <in>btle_advertising.cpp</in>
+                      <in>btle_discovery.cpp</in>
+                      <in>btle_gap.cpp</in>
+                      <in>btle_security.cpp</in>
+                    </df>
+                    <in>nRF5xCharacteristicDescriptorDiscoverer.cpp</in>
+                    <in>nRF5xDiscoveredCharacteristic.cpp</in>
+                    <in>nRF5xGap.cpp</in>
+                    <in>nRF5xGattClient.cpp</in>
+                    <in>nRF5xGattServer.cpp</in>
+                    <in>nRF5xServiceDiscovery.cpp</in>
+                    <in>nRF5xn.cpp</in>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="filesystem">
+            <df name="bd">
+              <in>ChainingBlockDevice.cpp</in>
+              <in>HeapBlockDevice.cpp</in>
+              <in>MBRBlockDevice.cpp</in>
+              <in>SlicingBlockDevice.cpp</in>
+            </df>
+            <df name="fat">
+              <df name="ChaN">
+                <in>ccsbcs.cpp</in>
+                <in>ff.cpp</in>
+              </df>
+              <in>FATFileSystem.cpp</in>
+            </df>
+            <in>Dir.cpp</in>
+            <in>File.cpp</in>
+            <in>FileSystem.cpp</in>
+          </df>
+          <df name="frameworks">
+            <df name="greentea-client">
+              <df name="source">
+                <in>greentea_metrics.cpp</in>
+                <in>greentea_serial.cpp</in>
+                <in>greentea_test_env.cpp</in>
+              </df>
+            </df>
+            <df name="unity">
+              <df name="source">
+                <in>unity.c</in>
+              </df>
+            </df>
+            <df name="utest">
+              <df name="source">
+                <in>unity_handler.cpp</in>
+                <in>utest_case.cpp</in>
+                <in>utest_default_handlers.cpp</in>
+                <in>utest_greentea_handlers.cpp</in>
+                <in>utest_harness.cpp</in>
+                <in>utest_shim.cpp</in>
+                <in>utest_stack_trace.cpp</in>
+                <in>utest_types.cpp</in>
+              </df>
+              <in>mbed-utest-shim.cpp</in>
+            </df>
+          </df>
+          <df name="mbedtls">
+            <df name="platform">
+              <df name="src">
+                <in>mbed_trng.c</in>
+              </df>
+            </df>
+            <df name="src">
+              <in>aes.c</in>
+              <in>aesni.c</in>
+              <in>arc4.c</in>
+              <in>asn1parse.c</in>
+              <in>asn1write.c</in>
+              <in>base64.c</in>
+              <in>bignum.c</in>
+              <in>blowfish.c</in>
+              <in>camellia.c</in>
+              <in>ccm.c</in>
+              <in>certs.c</in>
+              <in>cipher.c</in>
+              <in>cipher_wrap.c</in>
+              <in>cmac.c</in>
+              <in>ctr_drbg.c</in>
+              <in>debug.c</in>
+              <in>des.c</in>
+              <in>dhm.c</in>
+              <in>ecdh.c</in>
+              <in>ecdsa.c</in>
+              <in>ecjpake.c</in>
+              <in>ecp.c</in>
+              <in>ecp_curves.c</in>
+              <in>entropy.c</in>
+              <in>entropy_poll.c</in>
+              <in>error.c</in>
+              <in>gcm.c</in>
+              <in>havege.c</in>
+              <in>hmac_drbg.c</in>
+              <in>md.c</in>
+              <in>md2.c</in>
+              <in>md4.c</in>
+              <in>md5.c</in>
+              <in>md_wrap.c</in>
+              <in>memory_buffer_alloc.c</in>
+              <in>net_sockets.c</in>
+              <in>oid.c</in>
+              <in>padlock.c</in>
+              <in>pem.c</in>
+              <in>pk.c</in>
+              <in>pk_wrap.c</in>
+              <in>pkcs11.c</in>
+              <in>pkcs12.c</in>
+              <in>pkcs5.c</in>
+              <in>pkparse.c</in>
+              <in>pkwrite.c</in>
+              <in>platform.c</in>
+              <in>ripemd160.c</in>
+              <in>rsa.c</in>
+              <in>sha1.c</in>
+              <in>sha256.c</in>
+              <in>sha512.c</in>
+              <in>ssl_cache.c</in>
+              <in>ssl_ciphersuites.c</in>
+              <in>ssl_cli.c</in>
+              <in>ssl_cookie.c</in>
+              <in>ssl_srv.c</in>
+              <in>ssl_ticket.c</in>
+              <in>ssl_tls.c</in>
+              <in>threading.c</in>
+              <in>timing.c</in>
+              <in>version.c</in>
+              <in>version_features.c</in>
+              <in>x509.c</in>
+              <in>x509_create.c</in>
+              <in>x509_crl.c</in>
+              <in>x509_crt.c</in>
+              <in>x509_csr.c</in>
+              <in>x509write_crt.c</in>
+              <in>x509write_csr.c</in>
+              <in>xtea.c</in>
+            </df>
+          </df>
+          <df name="netsocket">
+            <df name="cellular">
+              <df name="generic_modem_driver">
+                <in>OnboardCellularInterface.cpp</in>
+                <in>PPPCellularInterface.cpp</in>
+                <in>UARTCellularInterface.cpp</in>
+              </df>
+            </df>
+            <in>NetworkInterface.cpp</in>
+            <in>NetworkStack.cpp</in>
+            <in>Socket.cpp</in>
+            <in>SocketAddress.cpp</in>
+            <in>TCPServer.cpp</in>
+            <in>TCPSocket.cpp</in>
+            <in>UDPSocket.cpp</in>
+            <in>WiFiAccessPoint.cpp</in>
+            <in>nsapi_dns.cpp</in>
+          </df>
+        </df>
+        <df name="hal">
+          <in>mbed_flash_api.c</in>
+          <in>mbed_gpio.c</in>
+          <in>mbed_lp_ticker_api.c</in>
+          <in>mbed_pinmap_common.c</in>
+          <in>mbed_ticker_api.c</in>
+          <in>mbed_us_ticker_api.c</in>
+        </df>
+        <df name="platform">
+          <in>ATCmdParser.cpp</in>
+          <in>CallChain.cpp</in>
+          <in>FileBase.cpp</in>
+          <in>FileHandle.cpp</in>
+          <in>FilePath.cpp</in>
+          <in>FileSystemHandle.cpp</in>
+          <in>LocalFileSystem.cpp</in>
+          <in>Stream.cpp</in>
+          <in>mbed_alloc_wrappers.cpp</in>
+          <in>mbed_application.c</in>
+          <in>mbed_assert.c</in>
+          <in>mbed_board.c</in>
+          <in>mbed_critical.c</in>
+          <in>mbed_error.c</in>
+          <in>mbed_interface.c</in>
+          <in>mbed_mem_trace.c</in>
+          <in>mbed_mktime.c</in>
+          <in>mbed_poll.cpp</in>
+          <in>mbed_retarget.cpp</in>
+          <in>mbed_rtc_time.cpp</in>
+          <in>mbed_sdk_boot.c</in>
+          <in>mbed_semihost_api.c</in>
+          <in>mbed_stats.c</in>
+          <in>mbed_wait_api_no_rtos.c</in>
+          <in>mbed_wait_api_rtos.cpp</in>
+        </df>
+        <df name="rtos">
+          <df name="rtx4">
+            <in>cmsis_os1.c</in>
+          </df>
+          <df name="rtx5">
+            <df name="TARGET_CORTEX_M">
+              <in>RTX_Config.c</in>
+              <in>rt_OsEventObserver.c</in>
+              <in>rtx_delay.c</in>
+              <in>rtx_evflags.c</in>
+              <in>rtx_evr.c</in>
+              <in>rtx_kernel.c</in>
+              <in>rtx_lib.c</in>
+              <in>rtx_memory.c</in>
+              <in>rtx_mempool.c</in>
+              <in>rtx_msgqueue.c</in>
+              <in>rtx_mutex.c</in>
+              <in>rtx_semaphore.c</in>
+              <in>rtx_system.c</in>
+              <in>rtx_thread.c</in>
+              <in>rtx_timer.c</in>
+            </df>
+            <in>mbed_rtx_handlers.c</in>
+          </df>
+          <in>Mutex.cpp</in>
+          <in>RtosTimer.cpp</in>
+          <in>Semaphore.cpp</in>
+          <in>Thread.cpp</in>
+          <in>mbed_boot.c</in>
+          <in>rtos_idle.c</in>
+        </df>
+        <df name="targets">
+          <df name="TARGET_NORDIC">
+            <df name="TARGET_MCU_NRF51822">
+              <df name="device">
+                <in>cmsis_nvic.c</in>
+                <in>system_nrf51.c</in>
+              </df>
+              <in>analogin_api.c</in>
+              <in>gpio_api.c</in>
+              <in>gpio_irq_api.c</in>
+              <in>i2c_api.c</in>
+              <in>pinmap.c</in>
+              <in>port_api.c</in>
+              <in>pwmout_api.c</in>
+              <in>serial_api.c</in>
+              <in>sleep.c</in>
+              <in>spi_api.c</in>
+              <in>twi_master.c</in>
+              <in>us_ticker.c</in>
+            </df>
+          </df>
+        </df>
+      </df>
+      <in>main.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>GNU_ARM|GNU</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0"
+                 commonFlags="-std=gnu++98 -fno-rtti -Wvla -fno-exceptions -funsigned-char -std=gnu++98 -fno-rtti -Wvla"/>
+        <element flagsID="1"
+                 commonFlags="-std=gnu99 -fno-exceptions -funsigned-char -std=gnu99"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <cTool>
+            <incDir>
+              <pElem>.</pElem>
+              <pElem>mbed-os</pElem>
+              <pElem>mbed-os/cmsis</pElem>
+              <pElem>mbed-os/cmsis/TARGET_CORTEX_M</pElem>
+              <pElem>mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_GCC</pElem>
+              <pElem>mbed-os/drivers</pElem>
+              <pElem>mbed-os/events</pElem>
+              <pElem>mbed-os/events/equeue</pElem>
+              <pElem>mbed-os/features</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/ble</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/ble/services</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/source</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/source/services</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/bootloader</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/hal_patch</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/script</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/ble_radio_notification</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/ble_services</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/ble_services/ble_dfu</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/common</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/device_manager</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/device_manager/config</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/peer_manager</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/device</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/ble_flash</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/delay</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/hal</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/pstorage</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/pstorage/config</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/bootloader_dfu</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/bootloader_dfu/hci_transport</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/crc16</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/experimental_section_vars</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/fds</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/fstorage</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/hci</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/scheduler</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/timer</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/util</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice/common</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice/common/softdevice_handler</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice/s130</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice/s130/headers</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/toolchain</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/btle</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/btle/custom</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/common</pElem>
+              <pElem>mbed-os/features/filesystem</pElem>
+              <pElem>mbed-os/features/filesystem/bd</pElem>
+              <pElem>mbed-os/features/filesystem/fat</pElem>
+              <pElem>mbed-os/features/filesystem/fat/ChaN</pElem>
+              <pElem>mbed-os/features/frameworks</pElem>
+              <pElem>mbed-os/features/frameworks/greentea-client</pElem>
+              <pElem>mbed-os/features/frameworks/greentea-client/greentea-client</pElem>
+              <pElem>mbed-os/features/frameworks/greentea-client/source</pElem>
+              <pElem>mbed-os/features/frameworks/unity</pElem>
+              <pElem>mbed-os/features/frameworks/unity/source</pElem>
+              <pElem>mbed-os/features/frameworks/unity/unity</pElem>
+              <pElem>mbed-os/features/frameworks/utest</pElem>
+              <pElem>mbed-os/features/frameworks/utest/source</pElem>
+              <pElem>mbed-os/features/frameworks/utest/utest</pElem>
+              <pElem>mbed-os/features/mbedtls</pElem>
+              <pElem>mbed-os/features/mbedtls/importer</pElem>
+              <pElem>mbed-os/features/mbedtls/inc</pElem>
+              <pElem>mbed-os/features/mbedtls/inc/mbedtls</pElem>
+              <pElem>mbed-os/features/mbedtls/platform</pElem>
+              <pElem>mbed-os/features/mbedtls/platform/inc</pElem>
+              <pElem>mbed-os/features/mbedtls/platform/src</pElem>
+              <pElem>mbed-os/features/mbedtls/src</pElem>
+              <pElem>mbed-os/features/mbedtls/targets</pElem>
+              <pElem>mbed-os/features/nanostack</pElem>
+              <pElem>mbed-os/features/netsocket</pElem>
+              <pElem>mbed-os/features/netsocket/cellular</pElem>
+              <pElem>mbed-os/features/netsocket/cellular/generic_modem_driver</pElem>
+              <pElem>mbed-os/features/netsocket/cellular/utils</pElem>
+              <pElem>mbed-os/features/storage</pElem>
+              <pElem>mbed-os/hal</pElem>
+              <pElem>mbed-os/hal/storage_abstraction</pElem>
+              <pElem>mbed-os/platform</pElem>
+              <pElem>mbed-os/rtos</pElem>
+              <pElem>mbed-os/rtos/rtx4</pElem>
+              <pElem>mbed-os/rtos/rtx5</pElem>
+              <pElem>mbed-os/rtos/rtx5/TARGET_CORTEX_M</pElem>
+              <pElem>mbed-os/rtos/rtx5/TARGET_CORTEX_M/TARGET_M0</pElem>
+              <pElem>mbed-os/rtos/rtx5/TARGET_CORTEX_M/TARGET_M0/TOOLCHAIN_GCC</pElem>
+              <pElem>mbed-os/targets</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/crc16</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/scheduler</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/util</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_8_0_0</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s130_nrf51822_1_0_0</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51_DK</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/device</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/device/TOOLCHAIN_GCC_ARM</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/device/TOOLCHAIN_GCC_ARM/TARGET_MCU_NORDIC_32K</pElem>
+              <pElem>BUILD</pElem>
+            </incDir>
+            <incFile>
+              <pElem>mbed_config.h</pElem>
+            </incFile>
+            <preprocessorList>
+              <Elem>ARM_MATH_CM0</Elem>
+              <Elem>CMSIS_VECTAB_VIRTUAL</Elem>
+              <Elem>CMSIS_VECTAB_VIRTUAL_HEADER_FILE="cmsis_nvic.h"</Elem>
+              <Elem>DEVICE_ANALOGIN=1</Elem>
+              <Elem>DEVICE_ERROR_PATTERN=1</Elem>
+              <Elem>DEVICE_I2C=1</Elem>
+              <Elem>DEVICE_INTERRUPTIN=1</Elem>
+              <Elem>DEVICE_PORTIN=1</Elem>
+              <Elem>DEVICE_PORTINOUT=1</Elem>
+              <Elem>DEVICE_PORTOUT=1</Elem>
+              <Elem>DEVICE_PWMOUT=1</Elem>
+              <Elem>DEVICE_SERIAL=1</Elem>
+              <Elem>DEVICE_SLEEP=1</Elem>
+              <Elem>DEVICE_SPI=1</Elem>
+              <Elem>DEVICE_SPISLAVE=1</Elem>
+              <Elem>FEATURE_BLE=1</Elem>
+              <Elem>MBED_BUILD_TIMESTAMP=1502461978.92</Elem>
+              <Elem>MBED_DEBUG</Elem>
+              <Elem>MBED_TRAP_ERRORS_ENABLED=1</Elem>
+              <Elem>NRF51</Elem>
+              <Elem>TARGET_CORTEX_M</Elem>
+              <Elem>TARGET_DEBUG</Elem>
+              <Elem>TARGET_FF_ARDUINO</Elem>
+              <Elem>TARGET_LIKE_CORTEX_M0</Elem>
+              <Elem>TARGET_LIKE_MBED</Elem>
+              <Elem>TARGET_M0</Elem>
+              <Elem>TARGET_MCU_NORDIC_32K</Elem>
+              <Elem>TARGET_MCU_NRF51</Elem>
+              <Elem>TARGET_MCU_NRF51822</Elem>
+              <Elem>TARGET_MCU_NRF51_32K</Elem>
+              <Elem>TARGET_NORDIC</Elem>
+              <Elem>TARGET_NRF51822</Elem>
+              <Elem>TARGET_NRF51_DK</Elem>
+              <Elem>TARGET_NRF51_DK_LEGACY</Elem>
+              <Elem>TARGET_UVISOR_UNSUPPORTED</Elem>
+              <Elem>TOOLCHAIN_GCC</Elem>
+              <Elem>TOOLCHAIN_GCC_ARM</Elem>
+              <Elem>TOOLCHAIN_object</Elem>
+              <Elem>__CMSIS_RTOS</Elem>
+              <Elem>__CORTEX_M0</Elem>
+              <Elem>__MBED_CMSIS_RTOS_CM</Elem>
+              <Elem>__MBED__=1</Elem>
+            </preprocessorList>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>.</pElem>
+              <pElem>mbed-os</pElem>
+              <pElem>mbed-os/cmsis</pElem>
+              <pElem>mbed-os/cmsis/TARGET_CORTEX_M</pElem>
+              <pElem>mbed-os/cmsis/TARGET_CORTEX_M/TOOLCHAIN_GCC</pElem>
+              <pElem>mbed-os/drivers</pElem>
+              <pElem>mbed-os/events</pElem>
+              <pElem>mbed-os/events/equeue</pElem>
+              <pElem>mbed-os/features</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/ble</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/ble/services</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/source</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/source/services</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/bootloader</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/hal_patch</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/script</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/ble_radio_notification</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/ble_services</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/ble_services/ble_dfu</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/common</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/device_manager</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/device_manager/config</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/peer_manager</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/device</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/ble_flash</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/delay</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/hal</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/pstorage</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/pstorage/config</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/bootloader_dfu</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/bootloader_dfu/hci_transport</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/crc16</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/experimental_section_vars</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/fds</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/fstorage</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/hci</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/scheduler</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/timer</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/util</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice/common</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice/common/softdevice_handler</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice/s130</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice/s130/headers</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/toolchain</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/btle</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/btle/custom</pElem>
+              <pElem>mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/common</pElem>
+              <pElem>mbed-os/features/filesystem</pElem>
+              <pElem>mbed-os/features/filesystem/bd</pElem>
+              <pElem>mbed-os/features/filesystem/fat</pElem>
+              <pElem>mbed-os/features/filesystem/fat/ChaN</pElem>
+              <pElem>mbed-os/features/frameworks</pElem>
+              <pElem>mbed-os/features/frameworks/greentea-client</pElem>
+              <pElem>mbed-os/features/frameworks/greentea-client/greentea-client</pElem>
+              <pElem>mbed-os/features/frameworks/greentea-client/source</pElem>
+              <pElem>mbed-os/features/frameworks/unity</pElem>
+              <pElem>mbed-os/features/frameworks/unity/source</pElem>
+              <pElem>mbed-os/features/frameworks/unity/unity</pElem>
+              <pElem>mbed-os/features/frameworks/utest</pElem>
+              <pElem>mbed-os/features/frameworks/utest/source</pElem>
+              <pElem>mbed-os/features/frameworks/utest/utest</pElem>
+              <pElem>mbed-os/features/mbedtls</pElem>
+              <pElem>mbed-os/features/mbedtls/importer</pElem>
+              <pElem>mbed-os/features/mbedtls/inc</pElem>
+              <pElem>mbed-os/features/mbedtls/inc/mbedtls</pElem>
+              <pElem>mbed-os/features/mbedtls/platform</pElem>
+              <pElem>mbed-os/features/mbedtls/platform/inc</pElem>
+              <pElem>mbed-os/features/mbedtls/platform/src</pElem>
+              <pElem>mbed-os/features/mbedtls/src</pElem>
+              <pElem>mbed-os/features/mbedtls/targets</pElem>
+              <pElem>mbed-os/features/nanostack</pElem>
+              <pElem>mbed-os/features/netsocket</pElem>
+              <pElem>mbed-os/features/netsocket/cellular</pElem>
+              <pElem>mbed-os/features/netsocket/cellular/generic_modem_driver</pElem>
+              <pElem>mbed-os/features/netsocket/cellular/utils</pElem>
+              <pElem>mbed-os/features/storage</pElem>
+              <pElem>mbed-os/hal</pElem>
+              <pElem>mbed-os/hal/storage_abstraction</pElem>
+              <pElem>mbed-os/platform</pElem>
+              <pElem>mbed-os/rtos</pElem>
+              <pElem>mbed-os/rtos/rtx4</pElem>
+              <pElem>mbed-os/rtos/rtx5</pElem>
+              <pElem>mbed-os/rtos/rtx5/TARGET_CORTEX_M</pElem>
+              <pElem>mbed-os/rtos/rtx5/TARGET_CORTEX_M/TARGET_M0</pElem>
+              <pElem>mbed-os/rtos/rtx5/TARGET_CORTEX_M/TARGET_M0/TOOLCHAIN_GCC</pElem>
+              <pElem>mbed-os/targets</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/crc16</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/scheduler</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/nordic_sdk/components/libraries/util</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s110_nrf51822_8_0_0</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/Lib/s130_nrf51822_1_0_0</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/TARGET_NRF51_DK</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/device</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/device/TOOLCHAIN_GCC_ARM</pElem>
+              <pElem>mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/device/TOOLCHAIN_GCC_ARM/TARGET_MCU_NORDIC_32K</pElem>
+              <pElem>BUILD</pElem>
+            </incDir>
+            <incFile>
+              <pElem>mbed_config.h</pElem>
+            </incFile>
+            <preprocessorList>
+              <Elem>ARM_MATH_CM0</Elem>
+              <Elem>CMSIS_VECTAB_VIRTUAL</Elem>
+              <Elem>CMSIS_VECTAB_VIRTUAL_HEADER_FILE="cmsis_nvic.h"</Elem>
+              <Elem>DEVICE_ANALOGIN=1</Elem>
+              <Elem>DEVICE_ERROR_PATTERN=1</Elem>
+              <Elem>DEVICE_I2C=1</Elem>
+              <Elem>DEVICE_INTERRUPTIN=1</Elem>
+              <Elem>DEVICE_PORTIN=1</Elem>
+              <Elem>DEVICE_PORTINOUT=1</Elem>
+              <Elem>DEVICE_PORTOUT=1</Elem>
+              <Elem>DEVICE_PWMOUT=1</Elem>
+              <Elem>DEVICE_SERIAL=1</Elem>
+              <Elem>DEVICE_SLEEP=1</Elem>
+              <Elem>DEVICE_SPI=1</Elem>
+              <Elem>DEVICE_SPISLAVE=1</Elem>
+              <Elem>FEATURE_BLE=1</Elem>
+              <Elem>MBED_BUILD_TIMESTAMP=1502461978.92</Elem>
+              <Elem>MBED_DEBUG</Elem>
+              <Elem>MBED_TRAP_ERRORS_ENABLED=1</Elem>
+              <Elem>NRF51</Elem>
+              <Elem>TARGET_CORTEX_M</Elem>
+              <Elem>TARGET_DEBUG</Elem>
+              <Elem>TARGET_FF_ARDUINO</Elem>
+              <Elem>TARGET_LIKE_CORTEX_M0</Elem>
+              <Elem>TARGET_LIKE_MBED</Elem>
+              <Elem>TARGET_M0</Elem>
+              <Elem>TARGET_MCU_NORDIC_32K</Elem>
+              <Elem>TARGET_MCU_NRF51</Elem>
+              <Elem>TARGET_MCU_NRF51822</Elem>
+              <Elem>TARGET_MCU_NRF51_32K</Elem>
+              <Elem>TARGET_NORDIC</Elem>
+              <Elem>TARGET_NRF51822</Elem>
+              <Elem>TARGET_NRF51_DK</Elem>
+              <Elem>TARGET_NRF51_DK_LEGACY</Elem>
+              <Elem>TARGET_UVISOR_UNSUPPORTED</Elem>
+              <Elem>TOOLCHAIN_GCC</Elem>
+              <Elem>TOOLCHAIN_GCC_ARM</Elem>
+              <Elem>TOOLCHAIN_object</Elem>
+              <Elem>__CMSIS_RTOS</Elem>
+              <Elem>__CORTEX_M0</Elem>
+              <Elem>__MBED_CMSIS_RTOS_CM</Elem>
+              <Elem>__MBED__=1</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/AnalogIn.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/BusIn.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/BusInOut.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/BusOut.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/CAN.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/Ethernet.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/FlashIAP.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/I2C.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/I2CSlave.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/InterruptIn.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/InterruptManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/RawSerial.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/SPI.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/SPISlave.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/Serial.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/SerialBase.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/Ticker.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/Timeout.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/Timer.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/TimerEvent.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/drivers/UARTSerial.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/events/EventQueue.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/events/equeue/equeue.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/events/equeue/equeue_mbed.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/events/equeue/equeue_posix.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/source/BLE.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/source/BLEInstanceBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/source/DiscoveredCharacteristic.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/source/GapScanningParams.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/source/services/DFUService.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/source/services/UARTService.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/source/services/URIBeaconConfigService.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/hal_patch/nordic_critical.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/hal_patch/sleep.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/ble_radio_notification/ble_radio_notification.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/ble_services/ble_dfu/ble_dfu.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/common/ble_advdata.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/common/ble_conn_params.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/common/ble_conn_state.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/common/ble_srv_common.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/device_manager/device_manager_peripheral.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/peer_manager/id_manager.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/peer_manager/peer_data.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/peer_manager/peer_data_storage.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/peer_manager/peer_database.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/peer_manager/peer_id.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/peer_manager/pm_buffer.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/ble/peer_manager/pm_mutex.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/ble_flash/ble_flash.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/delay/nrf_delay.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/hal/nrf_ecb.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/hal/nrf_nvmc.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/drivers_nrf/pstorage/pstorage.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/bootloader_dfu/bootloader_util.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/bootloader_dfu/dfu_app_handler.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/bootloader_dfu/dfu_init_template.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/crc16/crc16.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/fds/fds.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/fstorage/fstorage.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/fstorage/fstorage_nosd.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/hci/hci_mem_pool.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/scheduler/app_scheduler.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/util/app_error.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/util/app_util_platform.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/util/nrf_assert.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/libraries/util/sdk_mapped_flags.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice/common/softdevice_handler/softdevice_handler.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sdk/source/softdevice/common/softdevice_handler/softdevice_handler_appsh.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/btle/btle.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/btle/btle_advertising.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/btle/btle_discovery.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/btle/btle_gap.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/btle/btle_security.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/btle/custom/custom_helper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/nRF5xCharacteristicDescriptorDiscoverer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/nRF5xDiscoveredCharacteristic.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/nRF5xGap.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/nRF5xGattClient.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/nRF5xGattServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/nRF5xServiceDiscovery.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/FEATURE_BLE/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/source/nRF5xn.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/filesystem/Dir.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/filesystem/File.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/filesystem/FileSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/filesystem/bd/ChainingBlockDevice.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/filesystem/bd/HeapBlockDevice.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/filesystem/bd/MBRBlockDevice.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/filesystem/bd/SlicingBlockDevice.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/filesystem/fat/ChaN/ccsbcs.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/filesystem/fat/ChaN/ff.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/filesystem/fat/FATFileSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/greentea-client/source/greentea_metrics.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/greentea-client/source/greentea_serial.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/greentea-client/source/greentea_test_env.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/unity/source/unity.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/frameworks/utest/mbed-utest-shim.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/utest/source/unity_handler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/utest/source/utest_case.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/utest/source/utest_default_handlers.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/utest/source/utest_greentea_handlers.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/utest/source/utest_harness.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/utest/source/utest_shim.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/utest/source/utest_stack_trace.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/frameworks/utest/source/utest_types.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/platform/src/mbed_trng.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/aes.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/aesni.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/arc4.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/asn1parse.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/asn1write.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/base64.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/bignum.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/blowfish.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/camellia.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ccm.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/certs.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/cipher.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/cipher_wrap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/cmac.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ctr_drbg.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/debug.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/des.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/dhm.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ecdh.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ecdsa.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ecjpake.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ecp.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ecp_curves.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/entropy.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/entropy_poll.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/error.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/gcm.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/havege.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/hmac_drbg.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/md.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/md2.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/md4.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/md5.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/md_wrap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/memory_buffer_alloc.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/net_sockets.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/oid.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/padlock.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/pem.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/pk.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/pk_wrap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/pkcs11.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/pkcs12.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/pkcs5.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/pkparse.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/pkwrite.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/platform.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ripemd160.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/rsa.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/sha1.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/sha256.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/sha512.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ssl_cache.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ssl_ciphersuites.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ssl_cli.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ssl_cookie.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ssl_srv.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ssl_ticket.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/ssl_tls.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/threading.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/timing.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/version.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/version_features.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/x509.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/x509_create.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/x509_crl.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/x509_crt.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/x509_csr.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/x509write_crt.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/x509write_csr.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/mbedtls/src/xtea.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/features/netsocket/NetworkInterface.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/netsocket/NetworkStack.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/netsocket/Socket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/netsocket/SocketAddress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/netsocket/TCPServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/netsocket/TCPSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/netsocket/UDPSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/netsocket/WiFiAccessPoint.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/netsocket/cellular/generic_modem_driver/OnboardCellularInterface.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/netsocket/cellular/generic_modem_driver/PPPCellularInterface.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/netsocket/cellular/generic_modem_driver/UARTCellularInterface.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/features/netsocket/nsapi_dns.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/hal/mbed_flash_api.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/hal/mbed_gpio.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/hal/mbed_lp_ticker_api.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/hal/mbed_pinmap_common.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/hal/mbed_ticker_api.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/hal/mbed_us_ticker_api.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/ATCmdParser.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/CallChain.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/FileBase.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/FileHandle.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/FilePath.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/FileSystemHandle.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/LocalFileSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/Stream.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/mbed_alloc_wrappers.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/mbed_application.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_assert.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_board.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_critical.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_error.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_interface.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_mem_trace.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_mktime.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_poll.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/mbed_retarget.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/mbed_rtc_time.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/platform/mbed_sdk_boot.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_semihost_api.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_stats.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_wait_api_no_rtos.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/platform/mbed_wait_api_rtos.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/rtos/Mutex.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/rtos/RtosTimer.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/rtos/Semaphore.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/rtos/Thread.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mbed-os/rtos/mbed_boot.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtos_idle.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx4/cmsis_os1.c" ex="false" tool="0" flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/RTX_Config.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rt_OsEventObserver.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_delay.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_evflags.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_evr.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_kernel.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_lib.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_memory.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_mempool.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_msgqueue.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_mutex.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_semaphore.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_system.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_thread.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/TARGET_CORTEX_M/rtx_timer.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/rtos/rtx5/mbed_rtx_handlers.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/analogin_api.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/device/cmsis_nvic.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/device/system_nrf51.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/gpio_api.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/gpio_irq_api.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/i2c_api.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/pinmap.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/port_api.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/pwmout_api.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/serial_api.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/sleep.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/spi_api.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/twi_master.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="mbed-os/targets/TARGET_NORDIC/TARGET_MCU_NRF51822/us_ticker.c"
+            ex="false"
+            tool="0"
+            flavor2="3">
+        <cTool flags="1">
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
